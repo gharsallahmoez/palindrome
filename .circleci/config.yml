@@ -22,6 +22,10 @@ jobs:
           command: make test-race
 
       - run:
+          name: "vulnerability check"
+          command: make govulncheck
+
+      - run:
           name: "running lint"
           command: |
             make tool-lint
