@@ -60,6 +60,8 @@ Defines the application's core data structures. It includes:
 - **Database Layer**: `Repo` interacts with the database.
 - **Model Layer**: Defines the `Message` structure used throughout the application.
 
+**Note:**
+For simplicity, an in-memory map is used for storage.
 # Project Setup
 ## Local setup
 #### Requirements
@@ -130,6 +132,11 @@ please run the service before performing the e2e test.
 
 ```
 make test-e2e
+```
+
+## Vulnerability check
+```
+make govulncheck
 ```
 
 ## Linting
